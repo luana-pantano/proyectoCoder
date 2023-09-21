@@ -76,11 +76,6 @@ h2 {
     margin: 20px 300px;
 }
 
-.infoPortada {
-    display: inline-block;
-    margin: 20px;
-    width: 350px;
-}
 
 .pie {
     color: white;
@@ -100,3 +95,14 @@ h2 {
 .logo {
     width: 250px;
 }
+.infoPortada{
+width: 600px;
+   margin: 20px;
+}
+.tarjetas {
+    display: flex;
+    margin: 20px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
