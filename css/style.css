@@ -73,7 +73,7 @@ h2 {
 .cajaImg {
     width: 300px;
     height: 300px;
-    margin: 20px 300px;
+    margin: 20px auto;
 }
 
 
@@ -103,6 +103,12 @@ width: 600px;
     display: flex;
     margin: 20px;
     align-content: center;
-    flex-wrap: wrap;
+
+}
+.discografiaImagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
+    justify-items: center;
 }
 
