@@ -1,0 +1,218 @@
+$colorPrincipal: #832520;
+$colorTitulosPortada: #C43331;
+$fuentePrincipal: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+//header//
+
+header {
+    background-color: #D6D5C9;
+    width: 100%;
+    height: 80px;
+
+    .logo {
+        width: 250px;
+    }
+}
+
+
+//nav//
+.nav {
+    font-family: $fuentePrincipal;
+    --bs-nav-link-color: gray;
+    --bs-nav-link-hover-color: rgb(80, 79, 79);
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+//section portada//
+.cajaImg {
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+
+    .imagenPortada {
+        width: 400px;
+        height: auto;
+        border-radius: 300px;
+    }
+}
+
+//tarjetas portada//
+
+.tarjetas {
+    display: flex;
+    margin: 20px;
+    align-content: center;
+
+    .infoPortada {
+        width: 600px;
+        margin: 20px;
+    }
+
+    .titulos {
+        color: $colorTitulosPortada;
+        font-family: $fuentePrincipal;
+        font-weight: bold;
+        font-size: 150%;
+        text-align: center;
+    }
+
+    p {
+        font-family: $fuentePrincipal;
+        text-align: center;
+        margin: 20px;
+        font-size: 16px;
+    }
+}
+
+//galeria//
+.galeriaImagenes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+
+footer {
+    background-color: $colorPrincipal;
+    padding: 10px 10px;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+
+
+.tituloPrinc {
+
+    font-family: $fuentePrincipal;
+}
+
+label {
+    font-family: $fuentePrincipal;
+}
+
+
+
+
+.pie {
+    color: white;
+    font-family: $fuentePrincipal;
+}
+
+
+
+//discografia//
+
+.discografiaImagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
+    justify-items: center;
+
+    .discografiaImg {
+        display: inline-block;
+        margin: 20px;
+        width: 300px;
+    }
+
+    .disco {
+        width: 300px;
+    }
+}
+
+//tour//
+
+.tourImagenes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+
+    .imgTour {
+        width: 600px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .tarjetas {
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cajaImg {
+        display: flex;
+        justify-content: center;
+        width: auto;
+
+        .imagenPortada {
+            width: 60%;
+            align-content: center;
+        }
+    }
+
+    .discografiaImagenes {
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    //galeria mobile//
+    .galeriaImagenes {
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        .imgIndividualGaleria {
+            padding: 10px;
+            width: 90%;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .imgTour {
+        width: 90%;
+        height: auto;
+    }
+}

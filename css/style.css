@@ -1,202 +1,177 @@
 * {
-    margin: 0;
-    padding: 0;
-}
-
-header h1 {
-    color: #832520;
-    font-family: 'Oswald', sans-serif;
-    font-size: 300%;
-}
-
-ul {
-    list-style: none;
-}
-
-.nav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    --bs-nav-link-color: gray;
-    --bs-nav-link-hover-color: rgb(80, 79, 79);
-}
-
-li {
-    display: inline-block;
-}
-
-p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    margin: 20px;
-}
-
-.titulos {
-    color: #C43331;
-    font-weight: bold;
-    font-size: 150%;
-    text-align: center;
-}
-
-img {
-    width: 30%;
-    height: auto;
-}
-
-header {
-    background-color: #D6D5C9;
-    width: 100%;
-}
-
-footer {
-    background-color: #832520;
-    padding: 10px 10px;
-    width: 100%;
-    height: auto;
-    margin-top: auto;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.tituloPrinc {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+header {
+  background-color: #D6D5C9;
+  width: 100%;
+  height: 80px;
+}
+header .logo {
+  width: 250px;
 }
 
-label {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.nav {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --bs-nav-link-color: gray;
+  --bs-nav-link-hover-color: rgb(80, 79, 79);
 }
-
-h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.nav ul {
+  list-style: none;
 }
-
-.imagenPortada {
-    width: 400px;
-    height: auto;
-    border-radius: 200px;
+.nav li {
+  display: inline-block;
 }
 
 .cajaImg {
-    width: 300px;
-    height: auto;
-    margin: 20px auto;
+  width: 300px;
+  height: auto;
+  margin: 20px auto;
 }
-
-
-.pie {
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.discografiaImg {
-    display: inline-block;
-    margin: 20px;
-    width: 300px;
-}
-
-.disco {
-    width: 300px;
-}
-
-.logo {
-    width: 250px;
-}
-
-.infoPortada {
-    width: 600px;
-    margin: 20px;
+.cajaImg .imagenPortada {
+  width: 400px;
+  height: auto;
+  border-radius: 300px;
 }
 
 .tarjetas {
-    display: flex;
-    margin: 20px;
-    align-content: center;
-
+  display: flex;
+  margin: 20px;
+  align-content: center;
 }
-
-.discografiaImagenes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: baseline;
-    justify-items: center;
+.tarjetas .infoPortada {
+  width: 600px;
+  margin: 20px;
+}
+.tarjetas .titulos {
+  color: #C43331;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  text-align: center;
+}
+.tarjetas p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-size: 16px;
 }
 
 .galeriaImagenes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+img {
+  width: 30%;
+  height: auto;
+}
+
+footer {
+  background-color: #832520;
+  padding: 10px 10px;
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+}
+
+.tituloPrinc {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.pie {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.discografiaImagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: baseline;
+  justify-items: center;
+}
+.discografiaImagenes .discografiaImg {
+  display: inline-block;
+  margin: 20px;
+  width: 300px;
+}
+.discografiaImagenes .disco {
+  width: 300px;
 }
 
 .tourImagenes {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.imgTour {
-    width: 600px;
-    height: auto;
+.tourImagenes .imgTour {
+  width: 600px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
-    .tarjetas {
-        align-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cajaImg {
-        display: flex;
-        justify-content: center;
-        width: auto;
-    }
-
-    .discografiaImagenes {
-        align-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imagenPortada {
-        width: 60%;
-        align-content: center;
-    }
-
-    .galeriaImagenes {
-        align-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imgIndividualGaleria {
-        padding: 10px;
-        width: 90%;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .imgTour{
-        width: 90%;
-        height: auto;
-    }
+  .tarjetas {
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .cajaImg {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  .cajaImg .imagenPortada {
+    width: 60%;
+    align-content: center;
+  }
+  .discografiaImagenes {
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .galeriaImagenes {
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .galeriaImagenes .imgIndividualGaleria {
+    padding: 10px;
+    width: 90%;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .imgTour {
+    width: 90%;
+    height: auto;
+  }
 }
 
-
+/*# sourceMappingURL=style.css.map */
