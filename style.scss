@@ -43,10 +43,18 @@ header {
 }
 
 //section portada//
-.cajaImg {
+
+    .cajaImg {
     width: 300px;
     height: auto;
     margin: 20px auto;
+
+    p {
+        font-family: $fuentePrincipal;
+        text-align: center;
+        margin: 20px;
+        font-size: 16px;
+    }
 
     .imagenPortada {
         width: 400px;
@@ -54,6 +62,7 @@ header {
         border-radius: 300px;
     }
 }
+
 
 //tarjetas portada//
 
@@ -99,7 +108,7 @@ img {
 }
 
 footer {
-    background-color: $colorPrincipal;
+    background-color: linear-gradient (to bottom, #333333, #dd1818);
     padding: 10px 10px;
     width: 100%;
     height: auto;
@@ -160,6 +169,14 @@ label {
         height: auto;
     }
 }
+
+.infoWos {
+    font-family: $fuentePrincipal;
+    text-align: center;
+    margin: 20px;
+    font-size: 16px;
+}
+
 
 @media (max-width: 768px) {
     .tarjetas {
