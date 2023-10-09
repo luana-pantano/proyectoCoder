@@ -35,6 +35,12 @@ header .logo {
   height: auto;
   margin: 20px auto;
 }
+.cajaImg p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-size: 16px;
+}
 .cajaImg .imagenPortada {
   width: 400px;
   height: auto;
@@ -61,7 +67,7 @@ header .logo {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   margin: 20px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .galeriaImagenes {
@@ -79,7 +85,7 @@ img {
 }
 
 footer {
-  background: linear-gradient(to bottom, #333333, #dd1818);
+  background-color: linear-gradient to bottom, #333333, #dd1818;
   padding: 10px 10px;
   width: 100%;
   height: auto;
@@ -88,17 +94,16 @@ footer {
 
 .tituloPrinc {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding: 20px;
 }
 
 label {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
 }
 
 .pie {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 
 .discografiaImagenes {
@@ -129,21 +134,11 @@ label {
   height: auto;
 }
 
-.contactoForm{
-  padding: 20px;
-}
-.infoWos{
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        text-align: center;
-        margin: 20px;
-        font-size: 20px;
-}
-
-p{
+.infoWos {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   margin: 20px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
@@ -193,4 +188,4 @@ p{
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=.style.css.map */

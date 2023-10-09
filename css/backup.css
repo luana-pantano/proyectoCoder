@@ -148,6 +148,8 @@ h2 {
     height: auto;
 }
 
+
+
 @media (max-width: 768px) {
     .tarjetas {
         align-content: center;
@@ -200,3 +202,4 @@ h2 {
         height: auto;
     }
 }
+
