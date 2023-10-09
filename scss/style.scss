@@ -44,7 +44,7 @@ header {
 
 //section portada//
 
-    .cajaImg {
+.cajaImg {
     width: 300px;
     height: auto;
     margin: 20px auto;
@@ -94,11 +94,11 @@ header {
 
 //galeria//
 .galeriaImagenes {
-    @extend .tarjetas
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    @extend .tarjetas 
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
 }
 
 img {
@@ -172,9 +172,9 @@ label {
     @extend p
 }
 
-.contactoForm{
+.contactoForm {
     padding: 20px;
-  }
+}
 
 @media (max-width: 768px) {
     .tarjetas {
