@@ -1,100 +1,30 @@
-$colorPrincipal: #832520;
-$colorTitulosPortada: #C43331;
-$fuentePrincipal: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+//Base//
+@import "./base/reset";
+//Components//
+@import "./components/navbar";
+//Variables//
+@import "./abstracts/variables";
+//Portada//
+@import "./pages/home";
+//Layout//
+@import "./layout/header";
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
+//body//
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-//header//
-
-header {
-    background-color: #D6D5C9;
-    width: 100%;
-    height: auto;
-
-    .logo {
-        width: 250px;
-    }
+    display: flex ;
+    flex-direction: column ;
+    min-height: 100vh ;
 }
 
 
-//nav//
-.nav {
-    font-family: $fuentePrincipal;
-    --bs-nav-link-color: gray;
-    --bs-nav-link-hover-color: rgb(80, 79, 79);
-
-    ul {
-        list-style: none;
-    }
-
-    li {
-        display: inline-block;
-    }
-}
-
-//section portada//
-
-.cajaImg {
-    width: 300px;
-    height: auto;
-    margin: 20px auto;
-
-    p {
-        font-family: $fuentePrincipal;
-        text-align: center;
-        margin: 20px;
-        font-size: 16px;
-    }
-
-    .imagenPortada {
-        width: 400px;
-        height: auto;
-        border-radius: 300px;
-    }
-}
-
-
-//tarjetas portada//
-
-.tarjetas {
-    display: flex;
-    margin: 20px;
-    align-content: center;
-
-    .infoPortada {
-        width: 600px;
-        margin: 20px;
-    }
-
-    .titulos {
-        color: $colorTitulosPortada;
-        font-family: $fuentePrincipal;
-        font-weight: bold;
-        font-size: 150%;
-        text-align: center;
-    }
-
-    p {
-        font-family: $fuentePrincipal;
-        text-align: center;
-        margin: 20px;
-        font-size: 20px;
-    }
-}
 
 //galeria//
 .galeriaImagenes {
-    @extend .tarjetas 
+    @extend .tarjetas ;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
@@ -123,7 +53,10 @@ footer {
 
 label {
     font-family: $fuentePrincipal;
+    display: flex;
     font-size: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .pie {
@@ -163,17 +96,22 @@ label {
     align-items: center;
 
     .imgTour {
-        width: 600px;
+        width: 80%;
         height: auto;
     }
 }
 
 .infoWos {
-    @extend p
+    font-family: $fuentePrincipal;
+        text-align: center;
+        margin: 20px;
+        font-size: 20px;
 }
 
 .contactoForm {
     padding: 20px;
+    border: 2px solid black;
+    margin: 30px 100px;
 }
 
 @media (max-width: 768px) {
@@ -229,5 +167,11 @@ label {
     .imgTour {
         width: 90%;
         height: auto;
+    }
+
+    .contactoForm {
+        padding: 20px;
+        border: 2px solid black;
+        margin: 30px 50px;
     }
 }

@@ -141,6 +141,12 @@ label {
   font-size: 16px;
 }
 
+.contactoForm {
+  padding: 20px;
+  border: 2px solid black;
+  margin: 30px 100px;
+}
+
 @media (max-width: 768px) {
   .tarjetas {
     align-content: center;
