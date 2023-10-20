@@ -6,8 +6,9 @@
 
 .nav {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  --bs-nav-link-color: rgb(154, 151, 151);
+  --bs-nav-link-color: rgb(134 131 131);
   --bs-nav-link-hover-color: rgb(80, 79, 79);
+  font-size: 18px;
 }
 .nav ul {
   list-style: none;
@@ -57,12 +58,19 @@
 }
 
 header {
-  background-color: #D6D5C9;
+  background-color: #c6c6c6;
   width: 100%;
   height: auto;
 }
 header .logo {
   width: 250px;
+}
+
+footer {
+  background: linear-gradient(to bottom, #333333, #ab2323);
+  width: 100%;
+  height: auto;
+  margin-top: auto;
 }
 
 body {
@@ -81,14 +89,6 @@ body {
 img {
   width: 30%;
   height: auto;
-}
-
-footer {
-  background: linear-gradient(to bottom, #333333, #dd1818);
-  padding: 10px 10px;
-  width: 100%;
-  height: auto;
-  margin-top: auto;
 }
 
 .tituloPrinc {
@@ -145,9 +145,15 @@ label {
   font-size: 20px;
 }
 
+.btn.btn-primary {
+  background-color: gray;
+  border: none;
+}
+
 .contactoForm {
   padding: 20px;
   border: 2px solid black;
+  border-radius: 20px;
   margin: 30px 100px;
 }
 

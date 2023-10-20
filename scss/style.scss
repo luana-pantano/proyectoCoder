@@ -9,6 +9,7 @@
 @import "./pages/home";
 //Layout//
 @import "./layout/header";
+@import "./layout/footer";
 
 
 
@@ -19,8 +20,6 @@ body {
     flex-direction: column ;
     min-height: 100vh ;
 }
-
-
 
 //galeria//
 .galeriaImagenes {
@@ -35,15 +34,6 @@ img {
     width: 30%;
     height: auto;
 }
-
-footer {
-    background: linear-gradient(to bottom, #333333, #dd1818);
-    padding: 10px 10px;
-    width: 100%;
-    height: auto;
-    margin-top: auto;
-}
-
 
 .tituloPrinc {
 
@@ -108,9 +98,17 @@ label {
         font-size: 20px;
 }
 
+//Form//
+ 
+.btn.btn-primary{
+    background-color: gray;
+    border: none;
+}
+
 .contactoForm {
     padding: 20px;
     border: 2px solid black;
+    border-radius: 20px;
     margin: 30px 100px;
 }
 
