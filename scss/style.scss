@@ -1,4 +1,3 @@
-
 //Base//
 @import "./base/reset";
 //Components//
@@ -11,10 +10,7 @@
 @import "./layout/header";
 @import "./layout/footer";
 
-
-
 //body//
-
 body {
     display: flex ;
     flex-direction: column ;
@@ -36,7 +32,6 @@ img {
 }
 
 .tituloPrinc {
-
     font-family: $fuentePrincipal;
     padding: 20px;
 }
@@ -55,28 +50,23 @@ label {
     font-size: 20px;
 }
 
-
 //discografia//
-
 .discografiaImagenes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: baseline;
     justify-items: center;
-
     .discografiaImg {
         display: inline-block;
         margin: 20px;
         width: 300px;
     }
-
     .disco {
         width: 300px;
     }
 }
 
 //tour//
-
 .tourImagenes {
     display: flex;
     flex-direction: column;
@@ -99,12 +89,10 @@ label {
 }
 
 //Form//
- 
 .btn.btn-primary{
     background-color: gray;
     border: none;
 }
-
 .contactoForm {
     padding: 20px;
     border: 2px solid black;
@@ -119,7 +107,6 @@ label {
         align-items: center;
         justify-content: center;
     }
-
     .cajaImg {
         display: flex;
         justify-content: center;
@@ -130,7 +117,6 @@ label {
             align-content: center;
         }
     }
-
     .discografiaImagenes {
         align-content: center;
         flex-wrap: wrap;
@@ -139,7 +125,6 @@ label {
         display: flex;
         flex-direction: column;
     }
-
 
     //galeria mobile//
     .galeriaImagenes {
@@ -155,18 +140,15 @@ label {
             width: 90%;
         }
     }
-
     nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-
     .imgTour {
         width: 90%;
         height: auto;
     }
-
     .contactoForm {
         padding: 20px;
         border: 2px solid black;
