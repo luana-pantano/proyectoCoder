@@ -1,0 +1,157 @@
+//Base//
+@import "./base/reset";
+//Components//
+@import "./components/navbar";
+//Variables//
+@import "./abstracts/variables";
+//Portada//
+@import "./pages/home";
+//Layout//
+@import "./layout/header";
+@import "./layout/footer";
+
+//body//
+body {
+    display: flex ;
+    flex-direction: column ;
+    min-height: 100vh ;
+}
+
+//galeria//
+.galeriaImagenes {
+    @extend .tarjetas ;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+
+.tituloPrinc {
+    font-family: $fuentePrincipal;
+    padding: 20px;
+}
+
+label {
+    font-family: $fuentePrincipal;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pie {
+    color: white;
+    font-family: $fuentePrincipal;
+    font-size: 20px;
+}
+
+//discografia//
+.discografiaImagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
+    justify-items: center;
+    .discografiaImg {
+        display: inline-block;
+        margin: 20px;
+        width: 300px;
+    }
+    .disco {
+        width: 300px;
+    }
+}
+
+//tour//
+.tourImagenes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+
+    .imgTour {
+        width: 80%;
+        height: auto;
+    }
+}
+
+.infoWos {
+    font-family: $fuentePrincipal;
+        text-align: center;
+        margin: 20px;
+        font-size: 20px;
+}
+
+//Form//
+.btn.btn-primary{
+    background-color: gray;
+    border: none;
+}
+.contactoForm {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 30px 100px;
+}
+
+@media (max-width: 768px) {
+    .tarjetas {
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .cajaImg {
+        display: flex;
+        justify-content: center;
+        width: auto;
+
+        .imagenPortada {
+            width: 60%;
+            align-content: center;
+        }
+    }
+    .discografiaImagenes {
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    //galeria mobile//
+    .galeriaImagenes {
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        .imgIndividualGaleria {
+            padding: 10px;
+            width: 90%;
+        }
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .imgTour {
+        width: 90%;
+        height: auto;
+    }
+    .contactoForm {
+        padding: 20px;
+        border: 2px solid black;
+        margin: 30px 50px;
+    }
+}

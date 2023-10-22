@@ -1,202 +1,212 @@
+/*reset CSS*/
 * {
-    margin: 0;
-    padding: 0;
-}
-
-header h1 {
-    color: #832520;
-    font-family: 'Oswald', sans-serif;
-    font-size: 300%;
-}
-
-ul {
-    list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    --bs-nav-link-color: gray;
-    --bs-nav-link-hover-color: rgb(80, 79, 79);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --bs-nav-link-color: rgb(134 131 131);
+  --bs-nav-link-hover-color: rgb(80, 79, 79);
+  font-size: 18px;
 }
-
-li {
-    display: inline-block;
+.nav ul {
+  list-style: none;
 }
-
-p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    margin: 20px;
-}
-
-.titulos {
-    color: #C43331;
-    font-weight: bold;
-    font-size: 150%;
-    text-align: center;
-}
-
-img {
-    width: 30%;
-    height: auto;
-}
-
-header {
-    background-color: #D6D5C9;
-    width: 100%;
-}
-
-footer {
-    background-color: #832520;
-    padding: 10px 10px;
-    width: 100%;
-    height: auto;
-    margin-top: auto;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.tituloPrinc {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-label {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.imagenPortada {
-    width: 400px;
-    height: auto;
-    border-radius: 200px;
+.nav li {
+  display: inline-block;
 }
 
 .cajaImg {
-    width: 300px;
-    height: auto;
-    margin: 20px auto;
+  width: 300px;
+  height: auto;
+  margin: 20px auto;
+}
+.cajaImg p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-size: 16px;
+}
+.cajaImg .imagenPortada {
+  width: 400px;
+  height: auto;
+  border-radius: 300px;
 }
 
-
-.pie {
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.tarjetas, .galeriaImagenes {
+  display: flex;
+  margin: 20px;
+  align-content: center;
+}
+.tarjetas .infoPortada, .galeriaImagenes .infoPortada {
+  width: 600px;
+  margin: 20px;
+}
+.tarjetas .titulos, .galeriaImagenes .titulos {
+  color: #C43331;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  text-align: center;
+}
+.tarjetas p, .galeriaImagenes p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
 }
 
-.discografiaImg {
-    display: inline-block;
-    margin: 20px;
-    width: 300px;
+header {
+  background-color: #c6c6c6;
+  width: 100%;
+  height: auto;
+}
+header .logo {
+  width: 250px;
 }
 
-.disco {
-    width: 300px;
+footer {
+  background: linear-gradient(to bottom, #333333, #ab2323);
+  width: 100%;
+  height: auto;
+  margin-top: auto;
 }
 
-.logo {
-    width: 250px;
-}
-
-.infoPortada {
-    width: 600px;
-    margin: 20px;
-}
-
-.tarjetas {
-    display: flex;
-    margin: 20px;
-    align-content: center;
-
-}
-
-.discografiaImagenes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: baseline;
-    justify-items: center;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .galeriaImagenes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  width: 30%;
+  height: auto;
+}
+
+.tituloPrinc {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px;
+}
+
+label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pie {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+.discografiaImagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: baseline;
+  justify-items: center;
+}
+.discografiaImagenes .discografiaImg {
+  display: inline-block;
+  margin: 20px;
+  width: 300px;
+}
+.discografiaImagenes .disco {
+  width: 300px;
 }
 
 .tourImagenes {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+}
+.tourImagenes .imgTour {
+  width: 80%;
+  height: auto;
 }
 
-.imgTour {
-    width: 600px;
-    height: auto;
+.infoWos {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.btn.btn-primary {
+  background-color: gray;
+  border: none;
+}
+
+.contactoForm {
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 30px 100px;
 }
 
 @media (max-width: 768px) {
-    .tarjetas {
-        align-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cajaImg {
-        display: flex;
-        justify-content: center;
-        width: auto;
-    }
-
-    .discografiaImagenes {
-        align-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imagenPortada {
-        width: 60%;
-        align-content: center;
-    }
-
-    .galeriaImagenes {
-        align-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imgIndividualGaleria {
-        padding: 10px;
-        width: 90%;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .imgTour{
-        width: 90%;
-        height: auto;
-    }
+  .tarjetas, .galeriaImagenes {
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .cajaImg {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  .cajaImg .imagenPortada {
+    width: 60%;
+    align-content: center;
+  }
+  .discografiaImagenes {
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .galeriaImagenes {
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .galeriaImagenes .imgIndividualGaleria {
+    padding: 10px;
+    width: 90%;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .imgTour {
+    width: 90%;
+    height: auto;
+  }
+  .contactoForm {
+    padding: 20px;
+    border: 2px solid black;
+    margin: 30px 50px;
+  }
 }
 
-
+/*# sourceMappingURL=style.css.map */

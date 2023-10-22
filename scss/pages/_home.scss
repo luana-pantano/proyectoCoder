@@ -1,0 +1,49 @@
+//section portada//
+
+.cajaImg {
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+
+    p {
+        font-family: $fuentePrincipal;
+        text-align: center;
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    .imagenPortada {
+        width: 400px;
+        height: auto;
+        border-radius: 300px;
+    }
+}
+
+
+//tarjetas portada//
+
+.tarjetas {
+    display: flex;
+    margin: 20px;
+    align-content: center;
+
+    .infoPortada {
+        width: 600px;
+        margin: 20px;
+    }
+
+    .titulos {
+        color: $colorTitulosPortada;
+        font-family: $fuentePrincipal;
+        font-weight: bold;
+        font-size: 150%;
+        text-align: center;
+    }
+
+    p {
+        font-family: $fuentePrincipal;
+        text-align: center;
+        margin: 20px;
+        font-size: 20px;
+    }
+}
